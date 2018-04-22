@@ -1,0 +1,20 @@
+// Variables
+$burnt_orange: #ff5660;
+
+@import 'artist'; 
+
+#background_image {
+  	filter: blur(3px);
+}
+
+#link1 {
+	color: $burnt_orange;
+	transform: scale(1.3); 
+}
+
+
+
+
+
+
+
