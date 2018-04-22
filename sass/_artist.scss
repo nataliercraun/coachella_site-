@@ -1,4 +1,5 @@
 .artist_card {
+	position: relative; 
 	display: flex; 
 	justify-content: center; 
 	align-items: center; 
@@ -21,18 +22,18 @@
 	overflow: hidden; 
 }
 
-.artist_mask {
+.artist_card .artist_mask {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 200px; 
+	top: 0px; 
 	left: 0px; 
-	opacity: 1;
+	opacity: 0;
 
 	transition: opacity .2s;
 }
 
-.artist_card:hover .artist_mask {
+.artist_mask:hover {
 	opacity: 1; 
 }
 
@@ -44,20 +45,26 @@
 
 .media_row a {
 	box-sizing: border-box; 
-	width: 20%; 
-	height: 20%;  
-	margin: 50px; 
+	margin: 20px; 
 }
 
-.media_row a .insta {
-	background-image: url(images/insta.png); 
-	background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+.insta {
+	background-image: url(../images/insta.png); 
+	background-repeat:no-repeat;
+   	background-size:contain;
+   	height:200px;width:200px;
+
+   	z-index: 999; 
 }
 
-.media_row a .spotify {
-	background-image: url(images/spotify.png); 
+.spotify {
+	background-image: url(../images/spotify.png); 
+	background-repeat:no-repeat;
+   	background-size:contain;
+   	height:200px;width:200px;
+
+   	z-index: 999; 
+
 }
 
 .artist_card:hover {
