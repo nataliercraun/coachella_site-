@@ -1,4 +1,7 @@
 .artist_card {
+
+	bottom: -1000px; 
+
 	position: relative; 
 	display: flex; 
 	justify-content: center; 
@@ -13,12 +16,14 @@
 
 	width: 200px; 
 	height: 125px; 
+
+	transition: all 2s ease-in-out;
 }
 
 .artist_name {
 	color: white; 
 	font-size: 95%; 
-	opacity: .75; 
+	opacity: .9; 
 	overflow: hidden; 
 }
 
@@ -29,12 +34,6 @@
 	top: 0px; 
 	left: 0px; 
 	opacity: 0;
-
-	transition: opacity .2s;
-}
-
-.artist_mask:hover {
-	opacity: 1; 
 }
 
 .media_row {
@@ -53,8 +52,6 @@
 	background-repeat:no-repeat;
    	background-size:contain;
    	height:200px;width:200px;
-
-   	z-index: 999; 
 }
 
 .spotify {
@@ -62,15 +59,19 @@
 	background-repeat:no-repeat;
    	background-size:contain;
    	height:200px;width:200px;
-
-   	z-index: 999; 
-
 }
 
 .artist_card:hover {
+
+	.artist_mask {
+		transition: all .5s ease-in-out;
+		opacity: 1; 
+	}
+
 	.artist_name {
-		cursor:pointer; 
-		transition: all .2s ease-in-out;
+		cursor: pointer; 
+		transition: all .3s ease-in-out;
 		transform: scale(3.0); 
-	}	
+		opacity: 0; 
+	}
 }

@@ -4,6 +4,7 @@ $burnt_orange: #ff5660;
 html, body {
 	font-family: 'Fira Sans', sans-serif;
 	background-image: url(../images/ferriswheel.jpg); 
+	overflow: scroll; 
 }
 
 #background_image {
@@ -33,7 +34,7 @@ html, body {
 	flex-direction: column;
 	align-items: center; 
 
-	position: fixed;
+	position: sticky;
   	left: 0;
   	right: 0;
   	z-index: 99;
@@ -43,6 +44,7 @@ html, body {
 	display: flex; 
 	justify-content: center; 
 	flex-direction: row; 
+	flex-flow: row wrap; 
 }
 
 ul {
