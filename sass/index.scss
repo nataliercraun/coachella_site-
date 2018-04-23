@@ -23,9 +23,10 @@ html, body {
 }
 
 #main_logo {
-	width: 50%;
-	height: 50%; 
-	margin-top: 15px;  
+	width: 40%;
+	height: 40%; 
+	margin-top: 15px;
+	opacity: .7;   
 }
 
 .container {
@@ -50,8 +51,8 @@ html, body {
 ul {
 	display: flex;
 	flex-direction: row; 
-
 	list-style-type: none; 
+	
 	a {
 		@extend ul; 
 		text-decoration: none; 
