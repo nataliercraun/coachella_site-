@@ -9,13 +9,6 @@ function show_content() {
 
 function upstage() {
 	document.querySelector("#btn_row").innerHTML = '<ul><li><button class="btns" id="timebtn" onclick="uptime()">By Time</button></li></ul>'
-}
-
-function uptime() {
-	document.querySelector("#btn_row").innerHTML = '<ul><li><button class="btns" id="stagebtn" onclick="upstage()">By Stage</button></li></ul>'
-}
-
-function show_stages() {
 	var elements = document.getElementsByClassName("stage_card1"); 
 	var elements2 = document.getElementsByClassName("stage_card2"); 
 	var i; 
@@ -25,5 +18,9 @@ function show_stages() {
 	var j; 
 	for (j=0; j < elements2.length; j++) {
 		elements2[j].style.right = '0px'; 
-	} 
+	}
+}
+
+function uptime() {
+	document.querySelector("#btn_row").innerHTML = '<ul><li><button class="btns" id="stagebtn" onclick="upstage()">By Stage</button></li></ul>'
 }
