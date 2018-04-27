@@ -12,6 +12,11 @@
 	transition: all 2s ease-in-out;
 }
 
+.time_holder:hover {
+	transition: all .2s; 
+	transform: scale(1.1);
+}
+
 .time_name {
 	display: flex;
 	justify-content: center; 
@@ -45,6 +50,13 @@
 	justify-content: center;
 	box-sizing: border-box; 
 	color: black; 
+	overflow: visible; 
+	padding: 5px; 
+}
+
+#time_one_drop {
+	background-color: $palette_one;
+	opacity: .75; 
 }
 
 .time_artist {
