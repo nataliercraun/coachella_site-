@@ -2,7 +2,9 @@
 	box-sizing: border-box; 
 	margin: 20px;
 	display: flex; 
+	justify-content: center; 
 	flex-direction: row; 
+	flex-flow: row wrap; 
 	overflow-y: scroll;
 	overflow-x: scroll;
 
@@ -10,6 +12,7 @@
 	bottom: -1000px; 
 	position: relative; 
 	transition: all 2s ease-in-out;
+	overflow: visible; 
 }
 
 .time_holder:hover {
@@ -40,6 +43,7 @@
 .time_holder {
 	display: flex; 
 	flex-direction: column; 
+	overflow: visible; 
 }
 
 .time_dropdown {
@@ -51,12 +55,61 @@
 	box-sizing: border-box; 
 	color: black; 
 	overflow: visible; 
-	padding: 5px; 
+	padding-left: 0px;
+	padding-right: 0px; 
+	padding-bottom: 5px; 
+	padding-top: 5px;  
+	border-radius: 25px;
+	opacity: .75; 
+	font-size: 10px; 
 }
 
 #time_one_drop {
 	background-color: $palette_one;
-	opacity: .75; 
+}
+
+#time_two_drop {
+	background-color: $palette_two;
+}
+
+#time_three_drop {
+	background-color: $palette_three;
+}
+
+#time_four_drop {
+	background-color: $palette_four;
+}
+
+#time_five_drop {
+	background-color: $palette2_one;
+}
+
+#time_six_drop {
+	background-color: $palette_one;
+}
+
+#time_seven_drop {
+	background-color: $palette2_three;
+}
+
+#time_eight_drop {
+	background-color: $palette2_four;
+}
+
+#time_nine_drop {
+	background-color: $palette_one;
+}
+
+#time_ten_drop {
+	background-color: $palette_two;
+}
+
+#time_eleven_drop {
+	background-color: $palette_three;
+}
+
+#time_twelve_drop {
+	background-color: $palette_four;
 }
 
 .time_artist {

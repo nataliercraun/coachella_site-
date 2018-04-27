@@ -61,18 +61,7 @@ function uptime() {
 	}
 }
 
-document.querySelector("#time_one").onclick = function() {
 
-	console.log("clicked"); 
-
-	if (document.querySelector("#time_one_drop").style.display == 'flex') {
-		document.querySelector("#time_one_drop").style.display = 'none';
-		document.querySelector("#time_one_drop").style.visibility = 'hidden';
-	} else {
-		document.querySelector("#time_one_drop").style.display = 'flex';
-		document.querySelector("#time_one_drop").style.visibility = 'visible';
-	}	
-}
 
 
 
