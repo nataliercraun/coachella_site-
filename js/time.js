@@ -1,30 +1,3 @@
-document.querySelector("#time_one").onclick = function() {
-
-	console.log("clicked"); 
-
-	if (document.querySelector("#time_one_drop").style.display == 'flex') {
-		document.querySelector("#time_one_drop").style.display = 'none';
-		document.querySelector("#time_one_drop").style.visibility = 'hidden';
-		var elements = document.getElementsByClassName("time_name"); 
-		var i; 
-		for (i=0; i < elements.length; i++) {
-			if (elements[i] != this) {
-				elements[i].style.filter = ''; 
-			}
-		} 
-	} else {
-		document.querySelector("#time_one_drop").style.display = 'flex';
-		document.querySelector("#time_one_drop").style.visibility = 'visible';
-		var elements = document.getElementsByClassName("time_name"); 
-		var i; 
-		for (i=0; i < elements.length; i++) {
-			if (elements[i] != this) {
-				elements[i].style.filter = 'blur(1px)'; 
-			}
-		} 
-	}	
-}
-
 document.querySelector("#time_two").onclick = function() {
 
 	console.log("clicked"); 
@@ -37,6 +10,7 @@ document.querySelector("#time_two").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -47,6 +21,7 @@ document.querySelector("#time_two").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -64,6 +39,7 @@ document.querySelector("#time_three").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -74,6 +50,7 @@ document.querySelector("#time_three").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -91,6 +68,7 @@ document.querySelector("#time_four").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -101,6 +79,7 @@ document.querySelector("#time_four").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -118,6 +97,7 @@ document.querySelector("#time_five").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -127,7 +107,8 @@ document.querySelector("#time_five").onclick = function() {
 		var i; 
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
-				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.filter = 'blur(1px)';
+				elements[i].style.pointerEvents = 'none'; 
 			}
 		} 
 	}	
@@ -145,6 +126,7 @@ document.querySelector("#time_six").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -155,6 +137,7 @@ document.querySelector("#time_six").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -172,6 +155,7 @@ document.querySelector("#time_seven").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -182,6 +166,7 @@ document.querySelector("#time_seven").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -199,6 +184,7 @@ document.querySelector("#time_eight").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -209,6 +195,7 @@ document.querySelector("#time_eight").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -226,6 +213,7 @@ document.querySelector("#time_nine").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -236,6 +224,7 @@ document.querySelector("#time_nine").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -253,6 +242,7 @@ document.querySelector("#time_ten").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -263,6 +253,7 @@ document.querySelector("#time_ten").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -280,6 +271,7 @@ document.querySelector("#time_eleven").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -290,6 +282,7 @@ document.querySelector("#time_eleven").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
@@ -307,6 +300,7 @@ document.querySelector("#time_twelve").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = ''; 
+				elements[i].style.pointerEvents = '';
 			}
 		} 
 	} else {
@@ -317,6 +311,7 @@ document.querySelector("#time_twelve").onclick = function() {
 		for (i=0; i < elements.length; i++) {
 			if (elements[i] != this) {
 				elements[i].style.filter = 'blur(1px)'; 
+				elements[i].style.pointerEvents = 'none';
 			}
 		} 
 	}	
