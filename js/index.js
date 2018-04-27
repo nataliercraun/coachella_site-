@@ -18,6 +18,7 @@ function upstage() {
 	for (k=0; k < time_cards.length; k++) {
 		time_cards[k].style.bottom = '-1000px'; 
 		time_cards[k].style.visibility = 'hidden'; 
+		/*time_cards[k].style.display = 'none';*/
 	}
 
 	
@@ -53,9 +54,25 @@ function uptime() {
 
 	var time_cards = document.getElementsByClassName("time_card"); 
 	var k; 
-	console.log(time_cards.length); 
 	for (k=0; k < time_cards.length; k++) {
+		time_cards[k].style.bottom = '500px'; 
 		time_cards[k].style.visibility = 'visible'; 
-		time_cards[k].style.bottom = '0px'; 
+		/*time_cards[k].style.display = 'flex';*/
 	}
 }
+
+document.querySelector("#time_one").onclick = function() {
+
+	console.log("clicked"); 
+
+	if (document.querySelector("#time_one_drop").style.display == 'flex') {
+		document.querySelector("#time_one_drop").style.display = 'none';
+		document.querySelector("#time_one_drop").style.visibility = 'hidden';
+	} else {
+		document.querySelector("#time_one_drop").style.display = 'flex';
+		document.querySelector("#time_one_drop").style.visibility = 'visible';
+	}	
+}
+
+
+
