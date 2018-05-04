@@ -26,8 +26,24 @@ body {
 	margin-top: 20px; 
 	margin-bottom: 20px; 	
 	margin-right: 25px;
-
 	opacity: .8;  
+	.card-title {
+		font-style: italic;
+	}
+}
+
+.insta {
+	height:15%;width:15%;
+}
+
+a {
+	color: $burnt_orange; 
+	font-size: 13px; 
+}
+
+a:hover {
+	color: darkblue; 
+	text-decoration: none; 
 }
 
 .h5, h5 {
