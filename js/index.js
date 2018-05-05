@@ -63,27 +63,40 @@ function uptime() {
 
 document.querySelector("#video1").onclick = function() {
 	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	var tempSrc = document.querySelector("#mainImg").src; 
+	document.querySelector("#mainImg").src = this.src; 
 	document.querySelector("#mainVid").innerHTML = this.alt; 
 	this.alt = tempVid; 
-	this.src = document.querySelector("#mainVid").alt; 
+	this.src = tempSrc; 
+
+	console.log(document.querySelector("#mainImg").src); 
 }
 
 document.querySelector("#video2").onclick = function() {
 	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	var tempSrc = document.querySelector("#mainImg").src; 
+	document.querySelector("#mainImg").src = this.src; 
 	document.querySelector("#mainVid").innerHTML = this.alt; 
 	this.alt = tempVid; 
+	this.src = tempSrc; 
 }
 
 document.querySelector("#video3").onclick = function() {
 	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	var tempSrc = document.querySelector("#mainImg").src; 
+	document.querySelector("#mainImg").src = this.src; 
 	document.querySelector("#mainVid").innerHTML = this.alt; 
 	this.alt = tempVid; 
+	this.src = tempSrc; 
 }
 
 document.querySelector("#video4").onclick = function() {
 	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	var tempSrc = document.querySelector("#mainImg").src; 
+	document.querySelector("#mainImg").src = this.src; 
 	document.querySelector("#mainVid").innerHTML = this.alt; 
 	this.alt = tempVid; 
+	this.src = tempSrc; 
 }
 
 

@@ -63,6 +63,11 @@ html, body {
 	height: 100px; 
 }
 
+#mainImg {
+	display: none; 
+	visibility: hidden; 
+}
+
 .video:hover {
 	transition: all .2s; 
 	transform: scale(1.1); 
