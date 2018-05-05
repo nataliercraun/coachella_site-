@@ -61,6 +61,14 @@ function uptime() {
 	}
 }
 
+document.querySelector("#video1").onclick = function() {
+	console.log("clicked"); 
+	console.log(this.innerHTML); 
+	var newVid = this.innerHTML; 
+	this.innerHTML = document.querySelector("#mainVid").innerHTML; 
+	document.querySelector("#mainVid").innerHTML = newVid; 
+}
+
 
 
 

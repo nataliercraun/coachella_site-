@@ -52,12 +52,12 @@ html, body {
 	margin: 20px; 
 	width: 150px; 
 	height: 100px; 
-	pointerEvents: none; 
 }
 
 .video:hover {
 	transition: all .2s; 
 	transform: scale(1.1); 
+	cursor: pointer; 
 }
 
 ul {
