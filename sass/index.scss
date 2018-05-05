@@ -48,6 +48,18 @@ html, body {
 	flex-flow: row wrap; 
 }
 
+.video {
+	margin: 20px; 
+	width: 150px; 
+	height: 100px; 
+	pointerEvents: none; 
+}
+
+.video:hover {
+	transition: all .2s; 
+	transform: scale(1.1); 
+}
+
 ul {
 	margin-top: 10px; 
 	display: flex;
