@@ -7,6 +7,15 @@ html, body {
 	overflow: scroll; 
 }
 
+#link1 {
+	color: black;
+	transform: scale(1.0); 
+}
+
+#link1:hover {
+	color: $burnt_orange; 
+}
+
 #background_image {
 	background-image: url(../images/ferriswheel.jpg); 
 	background-size: cover;
