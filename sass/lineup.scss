@@ -24,14 +24,15 @@ $palette2_four: #f7786b;
 }
 
 .btns {
-	background-color: transparent; 
+	background-color: $palette2_three; 
+	opacity: .75; 
 	box-sizing: border-box; 
 	padding: 5px; 
 	border: none; 
-	font-size: 15px;  
+	font-size: 15px; 
+	border-radius: 20px; 
 }
 
 .btns:hover {
 	cursor: pointer; 
-	color: $burnt_orange;
 }
