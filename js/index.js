@@ -62,11 +62,28 @@ function uptime() {
 }
 
 document.querySelector("#video1").onclick = function() {
-	console.log("clicked"); 
-	console.log(this.innerHTML); 
-	var newVid = this.innerHTML; 
-	this.innerHTML = document.querySelector("#mainVid").innerHTML; 
-	document.querySelector("#mainVid").innerHTML = newVid; 
+	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	document.querySelector("#mainVid").innerHTML = this.alt; 
+	this.alt = tempVid; 
+	this.src = document.querySelector("#mainVid").alt; 
+}
+
+document.querySelector("#video2").onclick = function() {
+	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	document.querySelector("#mainVid").innerHTML = this.alt; 
+	this.alt = tempVid; 
+}
+
+document.querySelector("#video3").onclick = function() {
+	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	document.querySelector("#mainVid").innerHTML = this.alt; 
+	this.alt = tempVid; 
+}
+
+document.querySelector("#video4").onclick = function() {
+	var tempVid = document.querySelector("#mainVid").innerHTML; 
+	document.querySelector("#mainVid").innerHTML = this.alt; 
+	this.alt = tempVid; 
 }
 
 
