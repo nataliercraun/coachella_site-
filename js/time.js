@@ -287,32 +287,3 @@ document.querySelector("#time_eleven").onclick = function() {
 		} 
 	}	
 }
-
-document.querySelector("#time_twelve").onclick = function() {
-
-	console.log("clicked"); 
-
-	if (document.querySelector("#time_twelve_drop").style.display == 'flex') {
-		document.querySelector("#time_twelve_drop").style.display = 'none';
-		document.querySelector("#time_twelve_drop").style.visibility = 'hidden';
-		var elements = document.getElementsByClassName("time_name"); 
-		var i; 
-		for (i=0; i < elements.length; i++) {
-			if (elements[i] != this) {
-				elements[i].style.filter = ''; 
-				elements[i].style.pointerEvents = '';
-			}
-		} 
-	} else {
-		document.querySelector("#time_twelve_drop").style.display = 'flex';
-		document.querySelector("#time_twelve_drop").style.visibility = 'visible';
-		var elements = document.getElementsByClassName("time_name"); 
-		var i; 
-		for (i=0; i < elements.length; i++) {
-			if (elements[i] != this) {
-				elements[i].style.filter = 'blur(1px)'; 
-				elements[i].style.pointerEvents = 'none';
-			}
-		} 
-	}	
-}
